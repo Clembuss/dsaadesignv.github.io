@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>NASA</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+    <h1>Mars Rover Photos</h1>
+    <form>
+        <select id="cameras">
+            <option value="" disabled selected>Choisissez la caméra</option>
+            <option value="NAVCAM">NAVCAM</option>
+            <option value="FHAZ">FHAZ</option>
+            <option value="MAST">MAST</option>
+            <option value="CHEMCAM">CHEMCAM</option>
+        </select>
+        <div id="slider"></div><div id="sol"></div>
+        <button id="grab">Grab</button>
+        <div id="results"></div>
+    </form>
+    </header>
+    <section id="images">
+    </section>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

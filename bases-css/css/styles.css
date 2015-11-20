@@ -1,0 +1,44 @@
+body{
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Sélection multiple */
+section, div, article, p{
+    padding: 5px;
+}
+
+/* Sélection d'élément */
+section{
+    background-color: yellow;
+}
+
+span{
+    font-style: italic;
+    font-family: Courier;
+}
+
+/* Sélection d'ID */
+#maDiv{
+    background-color: green;
+}
+
+/* Sélection de class */
+.rouge{
+    background-color: red;
+}
+
+/* Sélection en cascade */
+article p{
+    background-color: blue;
+}
+
+/* Sélection d'élément */
+a{
+    color:#000;
+}
+
+/* Sélection d'état */
+a:hover{
+    color:#CCC;
+}

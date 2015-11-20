@@ -1,0 +1,168 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    background: #000;
+}
+
+header{
+    background: #000;
+}
+
+header h1{
+    color: white;
+    padding: 10px;
+    font-size: 1.7em
+}
+form{
+    padding: 10px;
+    background: #999;
+}
+
+
+#images img{
+    display: inline-block;
+    max-width: 25%;
+    min-width: 25%;
+    max-height: 25%;
+    min-height: 25%;
+    opacity: .8;
+    -webkit-transition: opacity .25s ease-out;
+       -moz-transition: opacity .25s ease-out;
+        -ms-transition: opacity .25s ease-out;
+         -o-transition: opacity .25s ease-out;
+            transition: opacity .25s ease-out;
+}
+
+#images img:hover{
+    opacity: 1;
+    cursor: crosshair;
+}
+
+.opacity-none{
+    opacity:0;
+}
+
+.opacity-full{
+    opacity: 1;
+}
+
+
+/* slider */
+.ui-slider {
+    position: relative;
+    text-align: left;
+    width: 500px;
+    display: inline-block;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+    background: white;
+    border-radius: 0.6em;
+    cursor: col-resize;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+.ui-slider-horizontal {
+    height: .2em;
+    background-color: #FFF;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.5em;
+    margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+.ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+    bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+    top: 0;
+}
+
+/* fin slider */
+
+select{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+    border: 1px solid #FFF;
+    padding: 5px 35px 5px 5px;
+    border: none;
+    height: 30px;
+    background: url('../ui/img/icon-dropdown.png') 96% / 15% no-repeat #FFF;
+    margin-right: 10px;
+}
+
+button{
+    border: 2px solid #F00;
+    background: none;
+    padding: 5px 25px;
+    font-size: 1em;
+    color: #F00;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button:hover{
+    background: #F00;
+    color: #333;
+}
+#sol,#results{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: .8em;
+}
+
+#sol{
+    margin-left: 10px;
+}
+
+#results{
+    -webkit-transition: opacity .25s ease-out;
+       -moz-transition: opacity .25s ease-out;
+        -ms-transition: opacity .25s ease-out;
+         -o-transition: opacity .25s ease-out;
+            transition: opacity .25s ease-out;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>API - getJSON</title>
+</head>
+<body>
+<button id="grab">GRAB PHOTOS FROM MARS ROVER API</button>
+<div id="results"></div>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#grab").on("click",function(){
+        $.getJSON("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=WmBMhWaWxah92XV9zpZjqnWk6unLqawq7BlIGger&format=JSON")
+        .done(function(data){
+            $("#results").html(JSON.stringify(data)); //la fonction JSON.stringify trasforme les objets en texte (string)
+        });
+    });
+});
+</script>
+</body>
+</html>
