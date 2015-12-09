@@ -2,32 +2,87 @@
 <html>
 <meta charset="utf-8">
 <head>
-    <title>NASA-Mining workshop resources</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>DSAA Villefontaine — Github</title>
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <style type="text/css" media="screen">
+        body{
+            padding: 0;
+            margin: 0;
+            border:0;
+            font-family: 'Cabin', sans-serif;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            width: 23%;
+            max-width: 500px;
+            margin: 1%;
+            box-sizing:border-box;
+            list-style-type: none;
+            cursor: pointer;
+        }
+        div{
+            width: 100%;
+            background:rgba(88,27,128,.5);
+            -webkit-transition: background .15s ease-in;
+               -moz-transition: background .15s ease-in;
+                -ms-transition: background .15s ease-in;
+                 -o-transition: background .15s ease-in;
+                    transition: background .15s ease-in;
+        }
+        div:hover{
+            background:rgba(88,27,128,1);
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 1.3em;
+            color:white;
+            margin: 0%;
+            padding: 0 5%;
+            line-height: 2.5em;
+            border-bottom:3px double white;
+            font-weight: normal;
+        }
+        p{
+            font-size: .9em;
+            padding:0 5% 5% 5%;
+            color: white;
+        }
+        #NASA-Mining{
+            background:url('thumbs/nasa.png');
+            background-size: 100%;
+        }
+        #what{
+            position: fixed;
+            bottom: 0;
+            left:0;
+            margin: 1%;
+            font-size: .8em;
+        }
+    </style>
 </head>
 <body>
-<sidebar>
-<h1>NASA-Mining</h1>
-<a href="https://github.com/dsaadesignv/NASA-Mining">→ (i) Github</a>
-<h3>Exemples</h3>
 <ul>
-    <li><a href="bases-css/index.html" target="iframe">Bases CSS</a></li>
-    <li><a href="api-getJSON/index.html" target="iframe">Simple API</a></li>
-    <li><a href="apod-api/index.html" target="iframe">API APOD</a></li>
-    <li><a href="marsphotos-api/index.html" target="iframe">API Curiosity</a></li>
-    <li class="black"><a href="helloJS/index.html" target="iframe">HelloJS</a></li>
+<li id="NASA-Mining">
+    <div>
+    <h2>~01 NASA-Mining</h2>
+    <p>10 ways to explore, manipulate and play with NASA Open Data sets and APIs.</p>
+    </div>
+</li>
+
 </ul>
-</sidebar>
-<main>
-<iframe src="helloJS/index.html" name="iframe"></iframe>
-</main>
+<footer id="what">
+    DSAA Villefontaine Github account ~ France <br><a href="https://github.com/dsaadesignv">Repositories</a> <a href="http://dsaa.designvillefontaine.com">Website</a> <a href="https://twitter.com/dsaadesignv">Twitter</a>
+</footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-    $("ul li a").on("click",function(){
-        $("ul li").removeClass("black");
-        $(this).parent().addClass("black");
+    $("li")
+    .on("click",function(){
+        var link = $(this).attr("id");
+        document.location.href=link;
     });
 });
 </script>

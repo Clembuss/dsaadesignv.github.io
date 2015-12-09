@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>NASA-Mining workshop resources</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<sidebar>
+<h1>NASA-Mining</h1>
+<a href="https://github.com/dsaadesignv/NASA-Mining">→ (i) Github</a>
+<h3>Exemples</h3>
+<ul>
+    <li><a href="bases-css/index.html" target="iframe">Bases CSS</a></li>
+    <li><a href="api-getJSON/index.html" target="iframe">Simple API</a></li>
+    <li><a href="apod-api/index.html" target="iframe">API APOD</a></li>
+    <li><a href="marsphotos-api/index.html" target="iframe">API Curiosity</a></li>
+    <li class="black"><a href="helloJS/index.html" target="iframe">HelloJS</a></li>
+</ul>
+</sidebar>
+<main>
+<iframe src="helloJS/index.html" name="iframe"></iframe>
+</main>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("ul li a").on("click",function(){
+        $("ul li").removeClass("black");
+        $(this).parent().addClass("black");
+    });
+});
+</script>
+</body>
+</html>
