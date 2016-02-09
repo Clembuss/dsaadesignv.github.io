@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NASA-Mining workshop resources</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <sidebar>
+        <h1>VAR</h1>
+        <br>
+        <a href="http://dsaadesignv.github.io/index.html">Github pages</a>
+        <a href="https://github.com/dsaadesignv/VAR">Github repo</a>
+        <h3>Projects</h3>
+        <ul>
+            <li>
+            	<a href="Alice/index.html" target="iframe">Alice Léonard - Fupotouille</a>
+            </li>
+            <li>
+            	<a href="Camille/index.html" target="iframe">Camille Martin - Blantitle</a>
+            </li>
+            <li>
+            	<a href="Delphin/index.html" target="iframe">Delphin Hauchard - Fukation</a>
+            </li>
+            <li>
+            	<a href="Faustine/index.html" target="iframe">Faustine Gheno - Frineulette</a>
+            </li>
+            <li>
+            	<a href="MayLine/index.html" target="iframe">May-Line Grassi - Siéase</a>
+            </li>
+            <li>
+            	<a href="Morgane/index.html" target="iframe">Morgane Billoud - Alquettetouille</a>
+            </li>
+            <li>
+            	<a href="Rosalie/index.html" target="iframe">Rosalie Mangenot - Aléari</a>
+            </li>
+            <li>
+            	<a href="Rosalie/index2.html" target="iframe">Rosalie Mangenot - Aléari 2</a>
+            </li>
+            <li>
+            	<a href="Victor/index.html" target="iframe">Victor Boquet - Albéidale</a>
+            </li>
+            <li>
+            	<a href="Yann/index.html" target="iframe">Yann Saint Clair - Tucusition</a>
+            </li>
+        </ul>
+    </sidebar> 
+
+    <main>
+        <iframe src="Alice/index.html" name="iframe" scrolling="no"></iframe>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("ul li a").on("click", function() {
+                $("ul li").removeClass("black");
+                $(this).parent().addClass("black");
+            });
+        });
+    </script>
+</body>
+
+</html>
