@@ -9,6 +9,7 @@ var params = {
     nbPoints: 3,
     reset: function( ) {
         background( 255 );
+    	text("Drag your mouse over the canvas", width/2, height/2);
     }
 };
 
@@ -22,6 +23,7 @@ gui.add( params, "reset" );
 function setup( ) {
     createCanvas( windowWidth, windowHeight );
     background( 255 );
+    text("Drag your mouse over the canvas", width/2, height/2);
     smooth( );
     x = mouseX;
     y = mouseY;
